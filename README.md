@@ -9,7 +9,7 @@ A repo designed to house a number of vanilla and modded Minecraft servers.
 
 The following command will run the docker container. By setting the `eula=true` you agree to the [Minecraft End User License Agreement](https://www.minecraft.net/en-us/eula). 
 
-For console access, you will need to set the rconpassword environment variable, then connect to the server using a rcon client ([my personal choice](https://github.com/Tiiffi/mcrcon)).
+For console access, you will need to set the rconpassword environment variable, then connect to the server using a rcon client ([my personal choice](https://github.com/Tiiffi/mcrcon)) on port 25575 (or wherever you choose to map it).
 
 ``` console
 docker run -d \
