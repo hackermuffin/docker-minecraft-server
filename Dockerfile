@@ -2,7 +2,7 @@
 FROM openjdk:8-jre-alpine
 
 # Set build directory - can be given at build time
-ARG SERVER_DIR=/minecraft
+ARG SERVER_DIR=/usr/share/minecraft
 
 # Setup server directory
 VOLUME ["${SERVER_DIR}"]
