@@ -20,6 +20,7 @@ COPY eula.txt ${SERVER_DIR}/eula.txt
 
 # Copy simply magic configuartion files
 COPY asm ${SERVER_DIR}/asm/
+COPY config ${SERVER_DIR}/config/
 COPY libraries ${SERVER_DIR}/libraries/
 COPY mods ${SERVER_DIR}/mods/
 COPY scripts ${SERVER_DIR}/scripts/
