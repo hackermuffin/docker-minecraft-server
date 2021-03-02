@@ -12,10 +12,17 @@ WORKDIR ${SERVER_DIR}
 EXPOSE 25565/tcp
 EXPOSE 25575/tcp
 
-# Setup minecraft files
-ADD https://launcher.mojang.com/v1/objects/1b557e7b033b583cd9f66746b7a9ab1ec1673ced/server.jar ${SERVER_DIR}/
+# Copy basic files
+COPY forge-1.7.10-10.13.4.1614-1.7.10-universal.jar ${SERVER_DIR}/
+COPY minecraft_server.1.7.10.jar ${SERVER_DIR}/
 COPY server.properties ${SERVER_DIR}/server.properties
 COPY eula.txt ${SERVER_DIR}/eula.txt
+
+# Copy simply magic configuartion files
+COPY asm ${SERVER_DIR}/asm/
+COPY libraries ${SERVER_DIR}/libraries/
+COPY mods ${SERVER_DIR}/mods/
+COPY scripts ${SERVER_DIR}/scripts/
 
 # Script for runtime
 ADD entrypoint.sh ${SERVER_DIR}/entrypoint.sh

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-CMD="java -Xmx1024M -Xms1024M -jar server.jar nogui"
+CMD="java -Xmx1024M -Xms1024M -XX:PermSize=256M -jar forge-1.7.10-10.13.4.1614-1.7.10-universal.jar nogui"
 
 # Output the command to the logs.
 echo "Attempting to run: ${CMD}"
