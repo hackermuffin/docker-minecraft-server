@@ -12,13 +12,10 @@ WORKDIR ${SERVER_DIR}
 EXPOSE 25565/tcp
 EXPOSE 25575/tcp
 
-# Setup minecraft files
+# Copy server files
+COPY . ${SERVER_DIR}
+# Download vanilla jar
 ADD https://launcher.mojang.com/v1/objects/1b557e7b033b583cd9f66746b7a9ab1ec1673ced/server.jar ${SERVER_DIR}/
-COPY server.properties ${SERVER_DIR}/server.properties
-COPY eula.txt ${SERVER_DIR}/eula.txt
-
-# Script for runtime
-ADD entrypoint.sh ${SERVER_DIR}/entrypoint.sh
 
 # Run server on container start
 ENTRYPOINT ["./entrypoint.sh"]
