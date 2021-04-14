@@ -3,7 +3,7 @@
 A repo designed to house a number of vanilla and modded Minecraft servers.
 
 ## Current (supported) tag options
-- `latest`,`1.16.5`
+- `latest`, `1.16.5`
 
 ## Basic usage
 
@@ -11,7 +11,7 @@ The following command will run the docker container. By setting the `eula=true` 
 
 For console access, you will need to set the rconpassword environment variable, then connect to the server using a rcon client ([my personal choice](https://github.com/Tiiffi/mcrcon)) on port 25575 (or wherever you choose to map it).
 
-Other optional environment varables are:
+Other optional environment variables are:
 - `minram`: minimum ram of the server
 - `maxram`: maximum ram of the server
 - `javaargs`: jvm arguments to use
@@ -25,3 +25,21 @@ docker run -d \
     -e rconpassword=<password> \
     hackermuffin/minecraft-server
 ```
+
+If you prefer using a docker-compose file, the following syntax can be used:
+``` console
+services:
+  minecraft-server:
+    image: "hackermuffin/minecraft-server:1.16.5"
+    restart: unless-stopped
+    ports:
+      - 25565:25565 # Main Minecraft port
+      - 25575:25575 # RCON port for server access
+    volumes:
+      - minecraft-server:/usr/share/minecraft
+    environment:
+      - eula=true
+      - rconpassword=password
+```
+
+If your looking for a minecraft specific proxy, check out [this project](https://github.com/janispritzkau/minecraft-reverse-proxy).
