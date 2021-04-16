@@ -2,12 +2,12 @@
 
 # Set required variables
 eula=${eula-false}          # Default eula to false
-runscript=false             # Run using script provided by modpack (true/false)
+runscript=true              # Run using script provided by modpack (true/false)
 minram=${minram-1024M}      # Default minimum ram
 maxram=${maxram-1024M}      # Default maximum ram
 name="minecraft-server"     # Set screen session name
 jar="server.jar"            # Set jar to execute
-scriptname=""               # Script name to use if needed
+scriptname="server-start.sh"    # Script name to use if needed
 
 # Use environment variable to keep eula requirement
 if [ $eula != true ]; then
