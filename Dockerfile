@@ -2,7 +2,7 @@
 FROM openjdk:8-jre-alpine
 
 # Install screen to container for server access
-RUN apk add screen
+RUN apk add --no-cache screen
 
 # Set build directory - can be given at build time
 ARG SERVER_DIR=/usr/share/minecraft
