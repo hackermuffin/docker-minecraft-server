@@ -1,6 +1,9 @@
 # Based on openjre 8
 FROM openjdk:8-jre-alpine
 
+# Install screen to container for server access
+RUN apk add screen
+
 # Set build directory - can be given at build time
 ARG SERVER_DIR=/usr/share/minecraft
 
