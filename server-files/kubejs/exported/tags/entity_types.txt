@@ -1,0 +1,247 @@
+To refresh this file, delete it and run /reload command again! Last updated: Jan 9, 2021 11:48:19 PM
+
+#alexsmobs:orca_targets
+- alexsmobs:moose
+- alexsmobs:seal
+- minecraft:polar_bear
+- minecraft:turtle
+- minecraft:drowned
+- minecraft:guardian
+- minecraft:elder_guardian
+
+#alexsmobs:fly_hurt_targets
+- minecraft:zombie
+- minecraft:drowned
+- minecraft:husk
+
+#botania:cocoon/common
+- minecraft:pig
+- minecraft:cow
+- minecraft:chicken
+- minecraft:rabbit
+- minecraft:sheep
+
+#alexsmobs:sunbird_scorch_targets
+- #minecraft:skeletons
+- minecraft:zombie
+- minecraft:husk
+- minecraft:drowned
+- minecraft:phantom
+
+#alexsmobs:crimson_mosquito_targets
+- #alexsmobs:passive_land_animals
+- #alexsmobs:neutral_land_animals
+- #alexsmobs:villagers
+
+#undergarden:rotspawn
+- undergarden:rotling
+- undergarden:rotwalker
+- undergarden:rotbeast
+- undergarden:rotdweller
+
+#forge:pigs
+- minecraft:pig
+
+#alexsmobs:fly_annoy_targets
+- minecraft:player
+
+#occultism:wild_hunt
+- occultism:wild_hunt_skeleton
+- occultism:wild_hunt_wither_skeleton
+
+#forge:parrots
+- minecraft:parrot
+
+#botania:cocoon/rare_aquatic
+- minecraft:dolphin
+
+#forge:cows
+- minecraft:cow
+
+#botania:cocoon/rare
+- minecraft:horse
+- minecraft:donkey
+- minecraft:wolf
+- minecraft:ocelot
+- minecraft:cat
+- minecraft:parrot
+- minecraft:llama
+- minecraft:fox
+- minecraft:panda
+- minecraft:turtle
+- quark:frog?
+
+#alexsmobs:crocodile_targets
+- #alexsmobs:passive_land_animals
+- #alexsmobs:villagers
+
+#botania:shaded_mesa_blacklist
+- minecraft:ender_dragon
+- minecraft:wither
+- minecraft:item_frame
+- minecraft:end_crystal
+- minecraft:painting
+- botania:corporea_spark
+- botania:doppleganger
+- botania:flame_ring
+- botania:magic_landmine
+- botania:magic_missile
+- botania:mana_burst
+- botania:pink_wither
+- botania:spark
+- botania:player_mover
+
+#minecraft:raiders
+- minecraft:evoker
+- minecraft:pillager
+- minecraft:ravager
+- minecraft:vindicator
+- minecraft:illusioner
+- minecraft:witch
+
+#occultism:afrit_allies
+- minecraft:blaze
+
+#forge:villagers
+- minecraft:villager
+
+#industrialforegoing:mob_imprisonment_tool_blacklist
+- artifacts:mimic
+
+#alexsmobs:passive_land_animals
+- minecraft:cow
+- minecraft:sheep
+- minecraft:pig
+- minecraft:chicken
+- minecraft:fox
+- minecraft:horse
+- minecraft:mooshroom
+- minecraft:ocelot
+- minecraft:llama
+- minecraft:panda
+- minecraft:parrot
+- minecraft:rabbit
+- minecraft:trader_llama
+- minecraft:wolf
+- minecraft:cat
+- minecraft:strider
+- alexsmobs:roadrunner
+- alexsmobs:gazelle
+- alexsmobs:capuchin_monkey
+- alexsmobs:seal
+- alexsmobs:shoebill
+
+#botania:cocoon/common_aquatic
+- minecraft:cod
+- minecraft:salmon
+- minecraft:tropical_fish
+- minecraft:pufferfish
+- minecraft:squid
+- quark:crab?
+
+#alexsmobs:villagers
+- minecraft:villager
+- minecraft:wandering_trader
+
+#alexsmobs:neutral_land_animals
+- alexsmobs:grizzly_bear
+- alexsmobs:gorilla
+- minecraft:polar_bear
+- alexsmobs:endergrade
+- alexsmobs:rattlesnake
+- alexsmobs:moose
+- alexsmobs:elephant
+
+#minecraft:impact_projectiles
+- #minecraft:arrows
+- minecraft:snowball
+- minecraft:fireball
+- minecraft:small_fireball
+- minecraft:egg
+- minecraft:trident
+- minecraft:dragon_fireball
+- minecraft:wither_skull
+- mekanism:flame
+- undergarden:blisterbomb
+- undergarden:rotten_blisterberry
+- undergarden:goo_ball
+- undergarden:slingshot_ammo
+- undergarden:minion_projectile
+
+#minecraft:beehive_inhabitors
+- resourcefulbees:steel_bee
+- resourcefulbees:ender_bee
+- resourcefulbees:aluminum_bee
+- resourcefulbees:glowstone_bee
+- resourcefulbees:clay_bee
+- resourcefulbees:netherite_bee
+- resourcefulbees:gold_bee
+- resourcefulbees:skeleton_bee
+- resourcefulbees:lumium_bee
+- resourcefulbees:kitten_bee
+- resourcefulbees:enderium_bee
+- resourcefulbees:signalum_bee
+- resourcefulbees:blaze_bee
+- resourcefulbees:tin_bee
+- resourcefulbees:zombie_bee
+- resourcefulbees:copper_bee
+- resourcefulbees:invar_bee
+- resourcefulbees:lapis_bee
+- resourcefulbees:pigman_bee
+- resourcefulbees:rgbee_bee
+- resourcefulbees:slimy_bee
+- resourcefulbees:ghast_bee
+- resourcefulbees:zinc_bee
+- resourcefulbees:icy_bee
+- resourcefulbees:electrum_bee
+- resourcefulbees:nickel_bee
+- resourcefulbees:obsidian_bee
+- resourcefulbees:nether_quartz_bee
+- resourcefulbees:osmium_bee
+- resourcefulbees:brass_bee
+- resourcefulbees:constantan_bee
+- resourcefulbees:water_bee
+- resourcefulbees:lead_bee
+- resourcefulbees:bronze_bee
+- resourcefulbees:gravel_bee
+- resourcefulbees:sand_bee
+- resourcefulbees:diamond_bee
+- resourcefulbees:oreo_bee
+- resourcefulbees:coal_bee
+- resourcefulbees:iron_bee
+- resourcefulbees:silver_bee
+- resourcefulbees:uranium_bee
+- resourcefulbees:wither_bee
+- resourcefulbees:creeper_bee
+- resourcefulbees:emerald_bee
+- resourcefulbees:redstone_bee
+- minecraft:bee
+
+#minecraft:skeletons
+- minecraft:skeleton
+- minecraft:stray
+- minecraft:wither_skeleton
+
+#minecraft:arrows
+- minecraft:arrow
+- minecraft:spectral_arrow
+
+#alexsmobs:warped_toad_targets
+- alexsmobs:crimson_mosquito
+- alexsmobs:fly
+
+#syp:llamas
+- minecraft:llama
+- minecraft:trader_llama
+
+#forge:chicken
+- minecraft:chicken
+
+#undergarden:cavern_creature
+- undergarden:nargoyle
+- undergarden:scintling
+- undergarden:muncher
+- undergarden:sploogie
+
+#alexsmobs:komodo_dragon_targets
+- #alexsmobs:passive_land_animals
