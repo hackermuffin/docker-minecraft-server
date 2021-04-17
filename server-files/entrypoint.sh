@@ -18,15 +18,8 @@ else
   echo "eula=true" > eula.txt
 fi
 
-# Configure rcon using given password
-if [ -z $rconpassword ]; then
-  sed -i "s/enable-rcon=.*/enable-rcon=false/g" ./server.properties
-  echo "For console access, set a rcon password by adding -e rconpassword=<password>"
-else
-  sed -i "s/enable-rcon=.*/enable-rcon=true/g" ./server.properties
-  sed -i "s/rcon.password=.*/rcon.password=${rconpassword}/g" ./server.properties
-  echo "RCON password set to ${rconpassword}"
-fi
+# Use generated script to update server.properties based on variables
+./properties.sh
 
 # Construct command
 if [ $runscript == false ]; then
