@@ -11,7 +11,6 @@ RUN apk add --no-cache bash
 ARG SERVER_DIR=/usr/share/minecraft
 
 # Setup server directory
-VOLUME ["${SERVER_DIR}"]
 WORKDIR ${SERVER_DIR}
 
 # Expose ports for server and rcon
@@ -20,6 +19,12 @@ EXPOSE 25575/tcp
 
 # Copy server files
 COPY ./server-files ${SERVER_DIR}
+
+# Run required install commands
+RUN ./install.sh
+
+# Define server directory as volume
+VOLUME ["${SERVER_DIR}"]
 
 # Run server on container start
 ENTRYPOINT ["./entrypoint.sh"]
