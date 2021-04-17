@@ -52,7 +52,7 @@ The server may be configured through the use of the following environment variab
 The following environment variables can be used to change settings in server.properties, shown with their default values
 
 - `spawn-protection=16`
-- `max-tick-time=60000`
+- `max-tick-time=300000`
 - `query.port=25565`
 - `generator-settings=`
 - `sync-chunk-writes=true`
@@ -64,14 +64,14 @@ The following environment variables can be used to change settings in server.pro
 - `enable-query=false`
 - `player-idle-timeout=0`
 - `text-filtering-config=`
-- `difficulty=easy`
+- `difficulty=2`
 - `spawn-monsters=true`
 - `broadcast-rcon-to-ops=true`
 - `op-permission-level=4`
 - `pvp=true`
 - `entity-broadcast-range-percentage=100`
 - `snooper-enabled=true`
-- `level-type=default`
+- `level-type=terraforged`
 - `hardcore=false`
 - `enable-status=true`
 - `enable-command-block=false`
@@ -84,9 +84,9 @@ The following environment variables can be used to change settings in server.pro
 - `server-port=25565`
 - `server-ip=`
 - `spawn-npcs=true`
-- `allow-flight=false`
+- `allow-flight=true`
 - `level-name=world`
-- `view-distance=10`
+- `view-distance=8`
 - `resource-pack=`
 - `spawn-animals=true`
 - `white-list=false`
@@ -100,7 +100,7 @@ The following environment variables can be used to change settings in server.pro
 - `enable-jmx-monitoring=false`
 - `enable-rcon=false`
 - `rate-limit=0`
-- `motd=A Minecraft Server`
+- `motd=Enigmatica 6 Server`
 
 ### Server configuration
 The following variables can be used to configure properties of how the server is run, with their default values. Currently, these values are only used if the server is started directly, rather than through a wrapper script.
