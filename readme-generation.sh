@@ -1,3 +1,6 @@
+#!/bin/bash
+
+cat > README.md << 'EOF_README_TOP'  # Write header to file
 # minecraft-docker-server
 
 This repo contains the build files for a series of vanilla and modded Minecraft servers setup to run in docker containers.
@@ -50,56 +53,11 @@ docker exec -it enigmatica6-minecraft-server screen -x
 The server may be configured through the use of the following environment variables
 ### Settings from server.properties
 The following environment variables can be used to change settings in server.properties, shown with their default values
-- `spawn_protection=16`
-- `max_tick_time=300000`
-- `query_port=25565`
-- `generator_settings=`
-- `sync_chunk_writes=true`
-- `force_gamemode=false`
-- `allow_nether=true`
-- `enforce_whitelist=false`
-- `gamemode=survival`
-- `broadcast_console_to_ops=true`
-- `enable_query=false`
-- `player_idle_timeout=`
-- `text_filtering_config=`
-- `difficulty=2`
-- `spawn_monsters=true`
-- `broadcast_rcon_to_ops=true`
-- `op_permission_level=4`
-- `pvp=true`
-- `entity_broadcast_range_percentage=100`
-- `snooper_enabled=true`
-- `level_type=terraforged`
-- `hardcore=false`
-- `enable_status=true`
-- `enable_command_block=false`
-- `max_players=20`
-- `network_compression_threshold=256`
-- `resource_pack_sha1=`
-- `max_world_size=29999984`
-- `function_permission_level=2`
-- `rcon_port=25575`
-- `server_port=25565`
-- `server_ip=`
-- `spawn_npcs=true`
-- `allow_flight=true`
-- `level_name=world`
-- `view_distance=8`
-- `resource_pack=`
-- `spawn_animals=true`
-- `white_list=false`
-- `rcon_password=`
-- `generate_structures=true`
-- `max_build_height=256`
-- `online_mode=true`
-- `level_seed=`
-- `use_native_transport=true`
-- `prevent_proxy_connections=false`
-- `enable_jmx_monitoring=false`
-- `enable_rcon=false`
-- `rate_limit=`
-- `motd=Enigmatica 6 Server`
+EOF_README_TOP
+
+awk -v q="'" -F'[-=.]' -f readme-generation.awk server-files/server.properties >> README.md
+
+cat >> README.md << 'EOF_README_BOTTOM'
 ### Server configuration
 The following variables can be used to configure properties of how the server is run, with their default values. Currently, these values are only used if the server is started directly, rather than through a wrapper script.
 
@@ -113,3 +71,4 @@ To use rcon to access the server console, you will need to set the rconpassword 
 
 
 If you're looking for a Minecraft specific proxy, check out [this project](https://github.com/janispritzkau/minecraft-reverse-proxy).
+EOF_README_BOTTOM
