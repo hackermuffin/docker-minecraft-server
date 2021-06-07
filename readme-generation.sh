@@ -41,7 +41,7 @@ services:
       - eula=true
 
 volumes:
-  minecraft-server:
+  enigmatica6-minecraft-server:
 ```
 
 The server launches in a screen terminal within the docker container. This can be accessed with the following command:
