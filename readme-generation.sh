@@ -15,11 +15,11 @@ The following command will run the docker container with the default configurati
 
 ``` console
 docker run -dit \
-    --name 1.16.5-minecraft-server \
-    -v minecraft-server:/usr/src/minecraft \
+    --name simply-magic-minecraft-server \
+    -v simply-magic-minecraft-server:/usr/src/minecraft \
     -p 25565:25565 \
     -e eula=true \
-    hackermuffin/minecraft-server:1.16.5
+    hackermuffin/minecraft-server:simply-magic-1.1.6
 ```
 
 Or for a docker-compose version:
@@ -27,26 +27,26 @@ Or for a docker-compose version:
 ``` console
 version: "3"
 services:
-  minecraft-server:
-    image: "hackermuffin/minecraft-server:1.16.5"
-    container_name: 1.16.5-minecraft-server
+  simply-magic-minecraft-server:
+    image: "hackermuffin/minecraft-server:simply-magic-1.1.6"
+    container_name: simply-magic-minecraft-server
     stdin_open: true
     tty: true
     restart: unless-stopped
     ports:
       - 25565:25565
     volumes:
-      - minecraft-server:/usr/share/minecraft
+      - simplt-magic-minecraft-server:/usr/share/minecraft
     environment:
       - eula=true
 
 volumes:
-  minecraft-server:
+  simply-magic-minecraft-server:
 ```
 
 The server launches in a screen terminal within the docker container. This can be accessed with the following command:
 ``` console
-docker exec -it 1.16.5-minecraft-server screen -x
+docker exec -it simply-magic-minecraft-server screen -x
 ```
 
 ## Server configuration
