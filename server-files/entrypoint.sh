@@ -6,7 +6,7 @@ runscript=false             # Run using script provided by modpack (true/false)
 minram=${minram-1024M}      # Default minimum ram
 maxram=${maxram-1024M}      # Default maximum ram
 name="minecraft-server"     # Set screen session name
-jar="server.jar"            # Set jar to execute
+jar="forge-1.7.10-10.13.4.1614-1.7.10-universal.jar" # Set jar to execute
 scriptname=""               # Script name to use if needed
 
 # Use environment variable to keep eula requirement
