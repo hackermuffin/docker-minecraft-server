@@ -9,8 +9,6 @@ WORKDIR ${SERVER_DIR}
 
 # Move required files into container
 COPY ./server-files ${SERVER_DIR}
-# Download vanilla jar
-ADD https://launcher.mojang.com/v1/objects/1b557e7b033b583cd9f66746b7a9ab1ec1673ced/server.jar ${SERVER_DIR}/
 
 # Run required install commands
 RUN ./install.sh
