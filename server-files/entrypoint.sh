@@ -7,7 +7,7 @@ minram=${minram-1024M}      # Default minimum ram
 maxram=${maxram-1024M}      # Default maximum ram
 name="minecraft-server"     # Set screen session name
 jar="server.jar"            # Set jar to execute
-scriptname="server-start.sh"    # Script name to use if needed
+scriptname="start-server.sh"    # Script name to use if needed
 
 # Use environment variable to keep eula requirement
 if [ $eula != true ]; then
