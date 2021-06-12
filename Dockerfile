@@ -1,5 +1,5 @@
 # Based on openjre 8
-FROM openjdk:8-jre-alpine
+FROM openjdk:16-alpine
 
 # Set build directory - can be given at build time
 ARG SERVER_DIR=/usr/share/minecraft
