@@ -6,10 +6,11 @@ cat > README.md << 'EOF_README_TOP'  # Write header to file
 This repo contains the build files for a series of vanilla and modded Minecraft servers setup to run in docker containers.
 
 ## Current (supported) tag options
-- `latest`, `vanilla-1.17`
+- `latest`, `vanilla`, `vanilla-1.17`
 - `vanilla-1.16.5`
-- `enigmatica6`
-- `simply-magic-1.1.6`
+- `enigmatica6`, `enigmatica6-0.4.14`
+- `engimatica6-0.4.8`
+- `simply-magic`, `simply-magic-1.1.6`
 
 ## Basic usage
 
