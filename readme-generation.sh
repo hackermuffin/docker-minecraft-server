@@ -6,10 +6,11 @@ cat > README.md << 'EOF_README_TOP'  # Write header to file
 This repo contains the build files for a series of vanilla and modded Minecraft servers setup to run in docker containers.
 
 ## Current (supported) tag options
-- `latest`, `vanilla-1.17`
+- `latest`, `vanilla`, `vanilla-1.17`
 - `vanilla-1.16.5`
-- `enigmatica6`
-- `simply-magic-1.1.6`
+- `enigmatica6`, `enigmatica6-0.4.14`
+- `engimatica6-0.4.8`
+- `simply-magic`, `simply-magic-1.1.6`
 
 ## Basic usage
 
@@ -17,11 +18,11 @@ The following command will run the docker container with the default configurati
 
 ``` console
 docker run -dit \
-    --name 1.16.5-minecraft-server \
-    -v minecraft-server:/usr/src/minecraft \
+    --name vanilla-minecraft-server \
+    -v vanilla-minecraft-server:/usr/src/minecraft \
     -p 25565:25565 \
     -e eula=true \
-    hackermuffin/minecraft-server:vanilla-1.16.5
+    hackermuffin/minecraft-server:vanilla
 ```
 
 Or for a docker-compose version:
@@ -30,25 +31,25 @@ Or for a docker-compose version:
 version: "3"
 services:
   minecraft-server:
-    image: "hackermuffin/minecraft-server:vanilla-1.16.5"
-    container_name: 1.16.5-minecraft-server
+    image: "hackermuffin/minecraft-server:vanilla"
+    container_name: vanilla-minecraft-server
     stdin_open: true
     tty: true
     restart: unless-stopped
     ports:
       - 25565:25565
     volumes:
-      - minecraft-server:/usr/share/minecraft
+      - vanilla-minecraft-server:/usr/share/minecraft
     environment:
       - eula=true
 
 volumes:
-  minecraft-server:
+  vanilla-minecraft-server:
 ```
 
 The server launches in a screen terminal within the docker container. This can be accessed with the following command:
 ``` console
-docker exec -it 1.16.5-minecraft-server screen -x
+docker exec -it vanilla-minecraft-server screen -x
 ```
 
 ## Server configuration
