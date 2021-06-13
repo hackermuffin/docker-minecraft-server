@@ -3,7 +3,8 @@
 This repo contains the build files for a series of vanilla and modded Minecraft servers setup to run in docker containers.
 
 ## Current (supported) tag options
-- `latest`, `1.16.5`
+- `latest`, `vanilla-1.17`
+- `vanilla-1.16.5`
 - `enigmatica6`
 - `simply-magic-1.1.6`
 
@@ -17,7 +18,11 @@ docker run -dit \
     -v simply-magic-minecraft-server:/usr/src/minecraft \
     -p 25565:25565 \
     -e eula=true \
+<<<<<<< HEAD
     hackermuffin/minecraft-server:simply-magic-1.1.6
+=======
+    hackermuffin/minecraft-server:vanilla-1.16.5
+>>>>>>> vanilla
 ```
 
 Or for a docker-compose version:
@@ -25,9 +30,15 @@ Or for a docker-compose version:
 ``` console
 version: "3"
 services:
+<<<<<<< HEAD
   simply-magic-minecraft-server:
     image: "hackermuffin/minecraft-server:simply-magic-1.1.6"
     container_name: simply-magic-minecraft-server
+=======
+  minecraft-server:
+    image: "hackermuffin/minecraft-server:vanilla-1.16.5"
+    container_name: 1.16.5-minecraft-server
+>>>>>>> vanilla
     stdin_open: true
     tty: true
     restart: unless-stopped

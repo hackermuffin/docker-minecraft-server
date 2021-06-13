@@ -3,9 +3,6 @@
 # Install required programs
 apk add --no-cache screen                       # Screen for console access
 
-# Download server jar
-wget https://launcher.mojang.com/v1/objects/1b557e7b033b583cd9f66746b7a9ab1ec1673ced/server.jar
-
 # Construct server.properties edit script
 cat > properties.sh << 'EOF_properties_header'  # Write header to file
 #!/bin/sh

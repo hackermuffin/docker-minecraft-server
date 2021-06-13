@@ -6,7 +6,8 @@ cat > README.md << 'EOF_README_TOP'  # Write header to file
 This repo contains the build files for a series of vanilla and modded Minecraft servers setup to run in docker containers.
 
 ## Current (supported) tag options
-- `latest`, `1.16.5`
+- `latest`, `vanilla-1.17`
+- `vanilla-1.16.5`
 - `enigmatica6`
 - `simply-magic-1.1.6`
 
@@ -37,7 +38,7 @@ services:
     ports:
       - 25565:25565
     volumes:
-      - simplt-magic-minecraft-server:/usr/share/minecraft
+      - simply-magic-minecraft-server:/usr/share/minecraft
     environment:
       - eula=true
 
