@@ -15,19 +15,11 @@ The following command will run the docker container with the default configurati
 
 ``` console
 docker run -dit \
-<<<<<<< HEAD
     --name enigmatica6-minecraft-server \
     -v enigmatica6-minecraft-server:/usr/src/minecraft \
     -p 25565:25565 \
     -e eula=true \
     hackermuffin/minecraft-server:enigmatica6
-=======
-    --name vanilla-minecraft-server \
-    -v vanilla-minecraft-server:/usr/src/minecraft \
-    -p 25565:25565 \
-    -e eula=true \
-    hackermuffin/minecraft-server:vanilla
->>>>>>> vanilla
 ```
 
 Or for a docker-compose version:
@@ -35,44 +27,26 @@ Or for a docker-compose version:
 ``` console
 version: "3"
 services:
-<<<<<<< HEAD
   enigmatica6-minecraft-server:
     image: "hackermuffin/minecraft-server:enigmatica6"
     container_name: enigmatica6-minecraft-server
-=======
-  minecraft-server:
-    image: "hackermuffin/minecraft-server:vanilla"
-    container_name: vanilla-minecraft-server
->>>>>>> vanilla
     stdin_open: true
     tty: true
     restart: unless-stopped
     ports:
       - 25565:25565
     volumes:
-<<<<<<< HEAD
       - enigmatica6-minecraft-server:/usr/share/minecraft
-=======
-      - vanilla-minecraft-server:/usr/share/minecraft
->>>>>>> vanilla
     environment:
       - eula=true
 
 volumes:
-<<<<<<< HEAD
   enigmatica6-minecraft-server:
-=======
-  vanilla-minecraft-server:
->>>>>>> vanilla
 ```
 
 The server launches in a screen terminal within the docker container. This can be accessed with the following command:
 ``` console
-<<<<<<< HEAD
 docker exec -it enigmatica6-minecraft-server screen -x
-=======
-docker exec -it vanilla-minecraft-server screen -x
->>>>>>> vanilla
 ```
 
 ## Server configuration
