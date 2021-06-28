@@ -19,8 +19,8 @@ cat > properties.awk << 'EOF_properties_awk'    # Write awk command to file
 !/#/ {
     {printf "set_server_properties "}
     {printf $1}{for(i=2;i<NF;i++){printf "-%s", $i}}
-    {printf " ${"$1}{for(i=2;i<NF;i++){printf "_%s", $i}}
-    if($NF) {printf "-"q $NF q}{printf "}\n"}
+    {printf " \"${"$1}{for(i=2;i<NF;i++){printf "_%s", $i}}
+    if($NF) {printf "-"q $NF q}{printf "}\"\n"}
 }
 EOF_properties_awk
 awk -v q="'" -F'[-=.]' -f properties.awk server.properties >> properties.sh
