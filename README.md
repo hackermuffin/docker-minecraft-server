@@ -5,7 +5,8 @@ This repo contains the build files for a series of vanilla and modded Minecraft 
 ## Current (supported) tag options
 - `latest`, `vanilla`, `vanilla-1.17`
 - `vanilla-1.16.5`
-- `enigmatica6`, `enigmatica6-0.4.14`
+- `enigmatica6`, `enigmatica6-0.5.9` 
+- `enigmatica6-0.4.14`
 - `engimatica6-0.4.8`
 - `simply-magic`, `simply-magic-1.1.6`
 
