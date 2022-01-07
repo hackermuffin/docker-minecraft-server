@@ -1,5 +1,7 @@
 # minecraft-docker-server
 
+** THIS REPO IS NOT MAINTAINTED, AND DOES NOT COVER LOG4J PATCHES ** 
+
 This repo contains the build files for a series of vanilla and modded Minecraft servers setup to run in docker containers.
 
 ## Current (supported) tag options
